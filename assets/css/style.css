@@ -19,7 +19,7 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-color: #111;
+    background-color: #035b5d;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -27,13 +27,13 @@ body {
 
 .navbar-text {
     font-size: 1rem;
-    color: #00faff;
+    color: #ffffff;
     font-weight: bold;
 }
 
 
 .navbar-brand {
-    color: #00faff;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -47,6 +47,14 @@ body {
     background-color: #a2f1ff; /* Slightly lighter background on hover */
     color: #3c3c3c; /* Keep text color bright */
     font-weight: bold;
+}
+
+.navbar-toggler{
+  color: #035b5d;
+}
+
+.navbar-toggler-icon {
+  color: #f1f1f1;
 }
 
 
@@ -80,7 +88,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -97,7 +105,7 @@ body {
 
 .hero__content {
   position: relative;
-  /* background-color: rgba(10, 17, 24, 0.5);  */
+  background-color: rgba(3, 91, 93, 0.5);
   z-index: 2;
   color: #fff;
   max-width: 650px;
@@ -146,8 +154,8 @@ body {
 .book-appointment-btn {     
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
-    background-color: #007bff;
+    color: #048388;
+    background-color: #d1d1d1;
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
