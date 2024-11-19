@@ -13,10 +13,10 @@
 <!-- Navbar -->
 <nav class="navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">RUKN ALBUSTAN</a>        
+        <a class="navbar-brand" href="/">RUKN ALBUSTAN</a>        
         <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+          <img src="assets/images/Icons/menu-icon.svg" alt="Menu Icon" class="custom-toggler-icon">
+      </button>      
         <ul class="dropdown-menu dropdown-menu-end custom-dropdown">
             <li><a class="dropdown-item" href="services.html">Services</a></li>
             <li><a class="dropdown-item" href="about.html">About Us</a></li>
@@ -34,7 +34,7 @@
     <div class="hero__content">
         <h1 class="hero__heading">Discover the Best Cleaning Services</h1>
         <h3 class="hero__subheading">We provide reliable and professional cleaning solutions <br> for your home and business.</h3>
-        <a href="#book-appointment" class="btn book-appointment-btn" role="button">Book Now</a>
+        <a href="booking.html" class="btn book-appointment-btn" role="button">Book Now</a>
     </div>
     <a href="#scroll-down" class="hero__scroll-btn">
         Explore <i class="bi bi-arrow-down-short"></i>
@@ -44,49 +44,118 @@
 
 <a id="scroll-down"></a>
 
-<section class="steps container-custom">
+<div class="container my-5">
+  <h2 class="text-center fw-bold">Check Out Our Best Services!</h2>
+  <p class="text-center text-muted">Explore our range of top-notch home and office services to make your life easier.</p>
 
-    <div class="row">
-      <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
-        <img src="assets/images/Asset 1.png" alt="Coffe Flavour" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
-      </div>
-
-      <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
-
-        <div class="steps__content-width">
-          <span>01</span>
-          <h1 class="h2 mb-4">Professional Office Cleaning</h1>
-          <p class="mb-4">Maintain a spotless and sanitized workplace with our specialized office cleaning services. From dusting to deep sanitization, we ensure a healthy and productive environment for your business.</p>
-          <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-
+  <div class="row gy-4">
+    <!-- Card 1 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/Icons/Home-cleaning.svg" alt="Home Cleaning">
         </div>
-
+        <p>Home Cleaning</p>
       </div>
     </div>
 
-  </section>
-
-  <section class="steps steps--background">
-
-    <div class="container-custom">
-
-      <div class="row">
-        <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
-          <img src="assets/images/Asset 2.png" alt="Health Benefits" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+    <!-- Card 2 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/Icons/Office-cleaning.svg" alt="Office Cleaning">
         </div>
-
-        <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
-          <div class="steps__content-width">
-            <span>02</span>
-            <h1 class="h2 mb-4">Expert Residential Cleaning</h1>
-            <p class="mb-4">Experience top-tier residential cleaning that covers every corner of your home. Our trained professionals use eco-friendly products to leave your home sparkling and fresh, making it a safe space for your family.</p>
-            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
+        <p>Office Cleaning</p>
       </div>
-
     </div>
-  </section>
+
+    <!-- Card 3 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/Icons/window-cleaning.svg" alt="window cleaning">
+        </div>
+        <p>Window Cleaning</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/Icons/tile-cleaning.svg" alt="Tile Cleaning">
+        </div>
+        <p>Tile Cleaning</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/Icons/furniture-cleaning.svg" alt="Furniture Cleaning">
+        </div>
+        <p>Furniture Cleaning</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/Icons/AC-cleaning.svg" alt="A/C Cleaning">
+        </div>
+        <p>A/C Cleaning</p>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/Icons/Carpet-cleaning.svg" alt="Carpet Cleaning">
+        </div>
+        <p>Carpet Cleaning</p>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="category-card">
+        <div class="category-image">
+          <img src="/assets/images/Icons/Pest-control.svg" alt="Pest Control Services">
+        </div>
+        <p>Pest Control</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="why-choose-us container-custom">
+  <div class="text-center mb-5">
+    <h1 class="h2">Why Choose Us</h1>
+    <p class="text-muted">Discover the reasons our clients trust us for their cleaning needs.</p>
+  </div>
+
+  <div class="row mb-5">
+    <!-- Section 1 -->
+    <div class="col-12 col-lg-6 d-flex flex-column align-items-center text-center">
+      <img src="/assets/images/Asset 1.jpg" alt="Professional Office Cleaning" class="img-fluid mb-4" width="553" height="746" loading="lazy">
+      <h2 class="h4 mb-3">Professional Office Cleaning</h2>
+      <p>Maintain a spotless and sanitized workplace with our specialized office cleaning services. From dusting to deep sanitization, we ensure a healthy and productive environment for your business.</p>
+      <a href="#" class="btn btn-primary">Read More <i class="bi bi-arrow-right"></i></a>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="col-12 col-lg-6 d-flex flex-column align-items-center text-center">
+      <img src="/assets/images/Asset 2.jpg" alt="Expert Residential Cleaning" class="img-fluid mb-4" width="553" height="746" loading="lazy">
+      <h2 class="h4 mb-3">Expert Residential Cleaning</h2>
+      <p>Experience top-tier residential cleaning that covers every corner of your home. Our trained professionals use eco-friendly products to leave your home sparkling and fresh, making it a safe space for your family.</p>
+      <a href="#" class="btn btn-primary">Read More <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
 
 
   <!-- Section With 3 Col's Start -->
@@ -96,20 +165,20 @@
 
         <div class="col-12 col-sm-4 mb-4">
           <img src="assets/images/Asset 3.png" class="mb-4 img-fluid" alt="Coffe Flavour" width="441" height="248" loading="lazy">
-          <h3>Professional Window Cleaning</h3>
-          <p>Our team provides streak-free window cleaning services, ensuring a spotless and clear view for your home or office. Experience top-quality service with a shine that lasts.</p>
+          <h3>Reliable and Trusted Professionals</h3>
+          <p>Our cleaning experts are thoroughly vetted, trained, and dedicated to delivering consistent, high-quality results you can depend on. Trust us for a seamless and stress-free experience.</p>
         </div>
 
         <div class="col-12 col-sm-4 mb-4">
           <img src="assets/images/Asset 4.png" class="mb-4 img-fluid" alt="Health Benefits" width="441" height="248" loading="lazy">
-          <h3>Comprehensive Deep Cleaning</h3>
-          <p>We offer thorough deep cleaning solutions for your entire space. From floors to ceilings, every nook and cranny is left spotless. Trust us for a hygienic and fresh environment.</p>
+          <h3>Eco-Friendly Cleaning Products</h3>
+          <p>We care about the environment as much as you do. Our eco-friendly cleaning products ensure a safe and sustainable clean for your home or office without compromising quality.</p>
         </div>
 
         <div class="col-12 col-sm-4 mb-4">
           <img src="assets/images/Asset 5.png" class="mb-4 img-fluid" alt="Essential Nutrients" width="441" height="248" loading="lazy">
-          <h3>Sanitization and Disinfection</h3>
-          <p>Ensure the safety of your family or employees with our sanitization services. We use industry-grade disinfectants to eliminate germs and create a healthier space.</p>
+          <h3>Customized Cleaning Plans</h3>
+          <p>Every space is unique, and so are your cleaning needs. We offer personalized cleaning plans tailored to your schedule, preferences, and requirements for maximum satisfaction.</p>
         </div>
 
       </div>

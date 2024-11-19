@@ -19,7 +19,7 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-color: #035b5d;
+    background-color: rgb(70, 60, 255);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -49,13 +49,27 @@ body {
     font-weight: bold;
 }
 
-.navbar-toggler{
-  color: #035b5d;
+.custom-toggler-icon {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+  cursor: pointer;
 }
 
-.navbar-toggler-icon {
-  color: #f1f1f1;
+.navbar-toggler {
+  border: none; /* Remove border around the button */
+  padding: 0;
 }
+
+.navbar-toggler:focus, 
+.navbar-toggler:active, 
+.navbar-toggler-icon:focus, 
+.navbar-toggler-icon:active, 
+.custom-toggler-icon:focus, 
+.custom-toggler-icon:active {
+    outline: none; /* Remove the focus outline */
+    box-shadow: none; /* Remove the highlight shadow */
+}
+
 
 
 /* Hero Section */
@@ -105,7 +119,8 @@ body {
 
 .hero__content {
   position: relative;
-  background-color: rgba(3, 91, 93, 0.5);
+  background-color: rgb(70, 60, 255, 0.8);
+  border-radius: 15px;
   z-index: 2;
   color: #fff;
   max-width: 650px;
@@ -154,7 +169,7 @@ body {
 .book-appointment-btn {     
     font-size: 16px;
     font-weight: bold;
-    color: #048388;
+    color: rgb(70, 60, 255);
     background-color: #d1d1d1;
     border: none;
     border-radius: 5px;
@@ -249,36 +264,7 @@ body {
   }
 
 
-  .steps {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  
-  .steps__section-thumbnail {
-    height: 240px;
-    object-fit: cover;
-    margin: 0 auto;
-  }
-  
-  .steps__content-width {
-    max-width: 456px;
-    margin: 0 auto;
-  }
-  
-  .steps--background {
-    background-color: #FEF8F9;
-  }
-  
-  @media (min-width: 544px) {
-    .steps {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-  
-    .steps__section-thumbnail {
-      height: auto;
-    }
-  }
+
 
   .footer .border-highlight {
     border-top: 1px solid var(--primary-color-highlight);
@@ -347,3 +333,101 @@ a:hover { color: var(--primary-color); }
     padding-bottom: 30px;
     font-size: small;
 }
+
+.category-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.category-image img {
+  max-width: 60px;
+  margin-bottom: 10px;
+}
+.category-card p {
+  margin: 0;
+  font-weight: 500;
+  color: #343a40;
+}
+
+
+/* Why Choose Us Section */
+/* Ensure proper alignment */
+.why-choose-us .row {
+  gap: 20px;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+}
+
+.why-choose-us .col-lg-6 {
+  max-width: 540px; /* Ensure each column does not stretch too much */
+  margin: 0 auto; /* Center each column */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff; /* Card-like background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-choose-us h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #233D54;
+}
+
+.why-choose-us p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #6c757d; /* Muted text for subtitle */
+}
+
+.why-choose-us .row {
+  gap: 20px;
+}
+
+.why-choose-us .col-lg-6:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.why-choose-us img {
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.why-choose-us h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #0a1118;
+}
+
+.why-choose-us p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.why-choose-us .btn-primary {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  background-color: #233D54;
+  border: none;
+}
+
+.why-choose-us .btn-primary:hover {
+  background-color: #0a1118;
+  color: #ffffff;
+}
+
+
+
