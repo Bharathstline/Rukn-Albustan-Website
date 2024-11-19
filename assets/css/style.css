@@ -56,7 +56,7 @@ body {
     height: 100vh;
     overflow: hidden;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     padding-left: 30px;
     margin-bottom: 30px;
 }
@@ -96,21 +96,23 @@ body {
 
 
 .hero__content {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    max-width: 650px;
-    text-align: left;
-    padding: 20px;
-    padding-left: 50px; /* Increase left padding */
-    transform: translateY(50%);
+  position: relative;
+  /* background-color: rgba(10, 17, 24, 0.5);  */
+  z-index: 2;
+  color: #fff;
+  max-width: 650px;
+  text-align: left;
+  padding: 20px;
+  padding-left: 50px; /* Increase left padding */
+  /* transform: translateY(50%); */
 }
+
 
 
 .hero__heading {
     font-size: 2.8rem;
     font-weight: 700;
-    color: #00faff;
+    color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -126,16 +128,6 @@ body {
     line-height: 1.6;
 }
 
-/* Explore Button */
-.hero__scroll-btn {
-    margin-top: 20px;
-    display: inline-block;
-    font-size: 1.2rem;
-    color: #00faff;
-    text-decoration: none;
-    border-bottom: 1px solid #00faff;
-    padding-bottom: 5px;
-}
 
 /* WhatsApp Icon */
 .whatsapp-chat {
@@ -176,6 +168,7 @@ body {
     }
     .hero__content {
         padding-left: 10px;
+        padding-right: 50px;
     }
 
     .hero__subheading {
@@ -198,6 +191,7 @@ body {
     }
     .hero__content {
         padding-left: 10px;
+        margin-right: 50px;
     }
 
     .hero__text {
@@ -219,7 +213,7 @@ body {
     bottom: 30px;
     transform: translateX(-50%);
     z-index: 1;
-    color: var(--bs-light);
+    color:#000000;
     display: flex;
     flex-direction: column;
     align-items: center;
