@@ -1,1 +1,239 @@
-<h1>Our Services</h1><p>Details about cleaning services will go here.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+  <style>
+
+    body {
+                padding-top: 60px; /* Adjust based on the navbar height */
+            }
+
+     /* Ensure the navbar is fixed correctly */
+     .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1050; /* Higher value to ensure it stays above other elements */
+        }
+
+
+    .service-item {
+      padding: 20px 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .service-icon {
+      font-size: 80px;
+      color: #007bff;
+    }
+    .cta-section {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+    .cta-section a {
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">RUKN ALBUSTAN</a>        
+        <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/images/Icons/menu-icon.svg" alt="Menu Icon" class="custom-toggler-icon">
+      </button>      
+        <ul class="dropdown-menu dropdown-menu-end custom-dropdown">
+            <li><a class="dropdown-item" href="services.html">Services</a></li>
+            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Our Services</h1>
+
+    <!-- Service Item -->
+    <div class="row service-item" id="home-cleaning">
+      <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <div class="service-icon">
+          <img src="assets/images/Home-cleaningSR.png" alt="Home Cleaning" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
+        <h4>Home Cleaning</h4>
+        <p>Our home cleaning services are designed to make your living space sparkle and shine. We focus on every nook and cranny, ensuring no dust or dirt is left behind. From bedrooms to kitchens, we clean and sanitize with precision, using eco-friendly and safe cleaning products. Our team is committed to creating a clean and comfortable environment for you and your family to relax and thrive. Whether it's a one-time deep clean or regular upkeep, we tailor our services to meet your specific needs, so you can enjoy a spotless and organized home without lifting a finger.</p>
+      </div>
+    </div>
+
+    <!-- Service Item -->
+    <div class="row service-item flex-md-row-reverse" id="office-cleaning">
+      <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <div class="service-icon">
+          <img src="assets/images/Office-cleaningSR.png" alt="Office Cleaning" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
+        <h4>Office Cleaning</h4>
+        <p>A clean office is a productive office, and our office cleaning services ensure your workspace remains inviting and professional. We understand the importance of first impressions, which is why we meticulously clean desks, meeting rooms, restrooms, and break areas. Our highly trained team uses industry-leading techniques to maintain hygiene, ensuring the health and well-being of your staff and clients. With flexible schedules and customized cleaning plans, we minimize disruption while delivering outstanding results. Let us help you create an environment where ideas flow freely, and productivity soars.</p>
+      </div>
+    </div>
+
+    <!-- Service Item -->
+    <div class="row service-item" id="window-cleaning">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <div class="service-icon">
+            <img src="assets/images/window-cleaningSR.png" alt="Window Cleaning" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <h4>Window Cleaning</h4>
+          <p>Windows are the gateway to natural light, and our expert window cleaning services ensure your view is always crystal clear. We specialize in removing stubborn stains, smudges, and dirt, leaving your windows spotless and streak-free. Whether it's residential or commercial, we cater to windows of all shapes and sizes, using the latest tools and techniques. Our commitment to safety and excellence ensures a hassle-free experience, leaving your property looking brighter and more inviting. Trust us to enhance the aesthetic appeal of your home or office with gleaming, professionally cleaned windows.</p>
+        </div>
+      </div>
+
+      <div class="row service-item flex-md-row-reverse" id="tile-cleaning">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <div class="service-icon">
+            <img src="assets/images/tile-cleaningSR.png" alt="Tile Cleaning" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <h4>Tile Cleaning</h4>
+          <p>Over time, tiles can lose their shine and appear dull due to accumulated dirt and grime. Our tile cleaning services restore the original beauty of your floors, walls, and surfaces. Using advanced cleaning solutions and equipment, we remove stubborn stains and trapped dirt, ensuring a polished and hygienic finish. Whether it's your bathroom, kitchen, or office space, we rejuvenate your tiles, making them look as good as new. Let us bring back the luster and cleanliness to your tiled areas, ensuring they stand the test of time.</p>
+        </div>
+      </div>
+
+      <div class="row service-item" id="furniture-cleaning">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <div class="service-icon">
+            <img src="assets/images/furniture-cleaningSR.png" alt="Furniture Cleaning" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <h4>Furniture Cleaning</h4>
+          <p>Your furniture is a significant investment, and our professional cleaning services help maintain its beauty and longevity. We specialize in removing dirt, stains, and allergens from sofas, chairs, and other upholstered items. Our cleaning process is safe, efficient, and tailored to the fabric type, ensuring the best results without causing damage. Whether it's a beloved armchair or an office waiting area, we bring new life to your furniture, making it look and feel as fresh as the day you bought it. Experience the comfort and cleanliness of expertly maintained furniture with our dedicated services.</p>
+        </div>
+      </div>
+
+      <div class="row service-item flex-md-row-reverse" id="ac-cleaning">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <div class="service-icon">
+            <img src="assets/images/AC-CleaningSR.png" alt="A/C Cleaning" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <h4>A/C Cleaning</h4>
+          <p>A clean air conditioning system is essential for a healthy and comfortable indoor environment. Our A/C cleaning services improve the performance and efficiency of your units, ensuring cool and clean air circulates throughout your space. We remove accumulated dust, dirt, and allergens from filters and ducts, reducing the risk of respiratory issues and unpleasant odors. Regular maintenance not only enhances air quality but also prolongs the life of your A/C system. Let us help you breathe easy with our thorough and professional A/C cleaning services.</p>
+        </div>
+      </div>
+
+      <div class="row service-item" id="carpet-cleaning">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <div class="service-icon">
+            <img src="assets/images/carpet-cleaning.png" alt="Carpet Cleaning" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <h4>Carpet Cleaning</h4>
+          <p>Carpets can accumulate dust, dirt, and allergens over time, affecting the air quality and appearance of your space. Our carpet cleaning services provide a deep and thorough clean, removing stains, odors, and embedded debris. Using advanced cleaning techniques, we restore the vibrancy and softness of your carpets, making them look and feel brand new. Whether it's a small rug or wall-to-wall carpeting, we handle each job with care and precision. Trust us to refresh your carpets and create a cleaner, healthier environment for you and your family.</p>
+        </div>
+      </div>
+
+      <div class="row service-item flex-md-row-reverse" id="pest-control">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <div class="service-icon">
+            <img src="assets/images/pest-controlSR.png" alt="Pest Control" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <h4>Pest Control</h4>
+          <p>Pests can disrupt the comfort and safety of your home or business, but our pest control services offer a reliable solution. We specialize in the safe and effective removal of rodents, insects, and other unwanted guests. Using environmentally friendly and proven methods, we ensure your property is pest-free while prioritizing the health and safety of your family or employees. Our team conducts thorough inspections and implements tailored strategies to prevent future infestations. With our expertise, you can enjoy peace of mind knowing your space is protected from harmful pests.</p>
+        </div>
+      </div>
+  
+  
+
+
+
+    <!-- Add more services here as needed -->
+
+    <!-- Call-to-Action Section -->
+    <div class="cta-section mt-5">
+      <a href="booking.html" class="btn btn-primary btn-lg">Book Now</a>
+      <span>OR Call - <a href="tel:+97145061500">+971 4 506 1500</a></span>
+    </div>
+  </div>
+
+
+  <section class="custom-contact-section bg-dark py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Logo Section -->
+            <div class="col-md-4 text-center text-md-start">
+                <img src="assets/images/LOGO.svg" alt="RUKN ALBUSTAN Logo" class="img-fluid mb-3" width="150">
+                <h5 class="text-light">RUKN ALBUSTAN <br> BUILDING CLEANING SERVICES LLC</h5>
+            </div>
+            <!-- Links Section -->
+            <div class="col-md-4 text-center my-3">
+                <ul class="list-unstyled">
+                    <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="careers.html" class="text-light text-decoration-none">Careers</a></li>
+                    <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                </ul>
+            </div>
+            <!-- Contact Section -->
+            <div class="col-md-4 text-center text-md-end">
+                <p class="text-light m-0">Office 201-174 Mashreq Building,<br>Al Souq Al Kabeer Dubai <br>PO Box: 44320 </p>
+                <p class="text-light m-0">Phone:  +971 4 344 1604</p>
+                <p class="text-light m-0">Email: <a href="info@ruknalbustan.com" class="text-light text-decoration-none">info@ruknalbustan.com </a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Footer Start -->
+  <footer class="footer bg-dark text-light">
+    <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
+      <div class="col-md-5 d-flex align-items-center">
+        <a href="index.html" class="me-2 text-light text-decoration-none">
+          <span>&copy;  2024 RUKN ALBUSTAN BUILDING CLEANING SERVICES LLC</span>
+        </a> 
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
+        <li class="ms-3 "><a class="text-light" href="#"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-light" href="#"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-light" href="#"><i class="bi bi-facebook"></i></a></li>
+      </ul>
+
+
+    </div>
+
+
+
+  </footer>
+
+
+  <!-- WhatsApp Chat Button -->
+<a href="https://wa.me/1234567890" class="whatsapp-chat" target="_blank">
+    <img src="assets/images/whatsapp.png" alt="WhatsApp Chat">
+</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+
+</body>
+</html>
