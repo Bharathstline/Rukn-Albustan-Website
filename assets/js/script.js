@@ -1,14 +1,21 @@
-// // Toggle the dropdown menu
-// const menuBtn = document.querySelector('.menu-btn');
-// const dropdownContent = document.querySelector('.dropdown-content');
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbarNav = document.getElementById('navbarNav');
 
-// menuBtn.addEventListener('click', () => {
-//     dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-// });
+  // Toggle Navbar Menu and Change Icon
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    menuToggle.classList.toggle('open');
+    navbarNav.classList.toggle('show');
+  });
 
-// // Close the dropdown when clicking outside of it
-// document.addEventListener('click', (event) => {
-//     if (!dropdownContent.contains(event.target) && !menuBtn.contains(event.target)) {
-//         dropdownContent.style.display = 'none';
-//     }
-// });
+  // Close Navbar When Clicking Outside
+  document.addEventListener('click', (e) => {
+    if (!navbarNav.contains(e.target) && !menuToggle.contains(e.target)) {
+      navbarNav.classList.remove('show');
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});

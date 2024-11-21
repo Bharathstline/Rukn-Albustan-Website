@@ -8,19 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <style>
-        /* Ensure navbar stays at the top */
-        body {
-            padding-top: 60px; /* Adjust based on the navbar height */
-        }
-
-        /* Ensure the navbar is fixed correctly */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1050; /* Higher value to ensure it stays above other elements */
-        }
-
+       
         /* Styling for the iframe container */
         .iframe-container {
             width: 100%;
@@ -45,19 +33,43 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">RUKN ALBUSTAN</a>        
-        <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="assets/images/Icons/menu-icon.svg" alt="Menu Icon" class="custom-toggler-icon">
-        </button>      
-        <ul class="dropdown-menu dropdown-menu-end custom-dropdown">
-            <li><a class="dropdown-item" href="services.html">Services</a></li>
-            <li><a class="dropdown-item" href="about.html">About Us</a></li>
-            <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="index.html">
+      <img src="assets/images/Name-logowhite.png" alt="LOGO" class="navbar-logo" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      id="menu-toggle"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
+
+
+
 
 <!-- Booking Form -->
 <section class="container my-5">

@@ -8,21 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
   <style>
-
-    body {
-                padding-top: 50px; /* Adjust based on the navbar height */
-            }
-
-     /* Ensure the navbar is fixed correctly */
-     .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1050; /* Higher value to ensure it stays above other elements */
-        }
-
-
-        body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -69,19 +55,43 @@
 <body>
 
     <!-- Navbar -->
-<nav class="navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">RUKN ALBUSTAN</a>        
-        <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="assets/images/Icons/menu-icon.svg" alt="Menu Icon" class="custom-toggler-icon">
-      </button>      
-        <ul class="dropdown-menu dropdown-menu-end custom-dropdown">
-            <li><a class="dropdown-item" href="services.html">Services</a></li>
-            <li><a class="dropdown-item" href="about.html">About Us</a></li>
-            <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-        </ul>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html">
+          <img src="assets/images/Name-logowhite.png" alt="LOGO" class="navbar-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  
+
 
 
 <section class="about-us-section d-flex align-items-center justify-content-center">
@@ -127,7 +137,7 @@
             <!-- Contact Section -->
             <div class="col-md-4 text-center text-md-end">
                 <p class="text-light m-0">Office 201-174 Mashreq Building,<br>Al Souq Al Kabeer Dubai <br>PO Box: 44320 </p>
-                <p class="text-light m-0">Phone:  +971 4 344 1604</p>
+                <p class="text-light m-0">Phone:  +971 56-6575230</p>
                 <p class="text-light m-0">Email: <a href="info@ruknalbustan.com" class="text-light text-decoration-none">info@ruknalbustan.com </a></p>
             </div>
         </div>
@@ -157,7 +167,7 @@
   </footer>
 
   <!-- WhatsApp Chat Button -->
-<a href="https://wa.me/1234567890" class="whatsapp-chat" target="_blank">
+<a href="https://wa.me/+971566575230" class="whatsapp-chat" target="_blank">
     <img src="assets/images/whatsapp.png" alt="WhatsApp Chat">
 </a>
 
